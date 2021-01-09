@@ -109,11 +109,20 @@ i {
         text-transform: uppercase;
         font-weight: 300;
         margin-bottom: 2rem; }
+        @media screen and (max-width: 750px) {
+          .interactive-content-container h2 {
+            font-size: 3rem;
+            text-align: center; } }
       .interactive-content-container p {
         font-size: 1.4rem;
         font-family: "Alata", sans-serif;
         color: rgba(51, 51, 51, 0.582);
         line-height: 1.7; }
+        @media screen and (max-width: 750px) {
+          .interactive-content-container p {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto; } }
 
 .creations {
   margin-top: 5rem; }
