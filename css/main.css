@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  display: inline; }
+
+.footer-container,
+.header-container,
+.creations-container,
+.interactive-container {
+  width: 80%;
+  margin: 0 auto; }
+  @media screen and (max-width: 750px) {
+    .footer-container,
+    .header-container,
+    .creations-container,
+    .interactive-container {
+      width: 90%; } }
+
+i {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer; }
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/desktop/image-hero.jpg) center no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column; }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.5rem; }
+    .header-nav-list {
+      display: flex;
+      list-style: none; }
+      @media screen and (max-width: 750px) {
+        .header-nav-list {
+          display: none; } }
+    .header-nav-list li {
+      font-size: 1.5rem;
+      color: #fff;
+      font-family: "Alata", sans-serif; }
+    .header-nav-list li:not(:nth-child(5)) {
+      margin-right: 3rem; }
+  .header-content {
+    min-width: 55%;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 2rem;
+    margin-top: 10rem; }
+  .header-content h1 {
+    font-size: 6rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300; }
+    @media screen and (max-width: 750px) {
+      .header-content h1 {
+        font-size: 4rem; } }
+
+.interactive {
+  margin: 15rem 0; }
+  .interactive-container {
+    display: flex; }
+    @media screen and (max-width: 750px) {
+      .interactive-container {
+        flex-direction: column; } }
+  .interactive-image {
+    background: url(../assets/images/desktop/image-interactive.jpg) center no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 41%, 74% 41%, 74% 100%, 0 100%);
+    height: 500px;
+    width: 100%;
+    flex: 3; }
+    @media screen and (max-width: 750px) {
+      .interactive-image {
+        clip-path: none;
+        height: 300px;
+        width: 300px; } }
+  .interactive-content {
+    flex: 1;
+    position: relative; }
+    .interactive-content-container {
+      position: absolute;
+      left: -15rem;
+      bottom: 0; }
+      .interactive-content-container h2 {
+        font-size: 5rem;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 2rem; }
+      .interactive-content-container p {
+        font-size: 1.4rem;
+        font-family: "Alata", sans-serif;
+        color: rgba(51, 51, 51, 0.582);
+        line-height: 1.7; }
+
+.creations {
+  margin-top: 5rem; }
+  @media screen and (max-width: 750px) {
+    .creations-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
+  .creations-head {
+    display: flex; }
+    .creations-head h2 {
+      font-size: 4.5rem;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: 300;
+      display: inline; }
+      @media screen and (max-width: 750px) {
+        .creations-head h2 {
+          font-size: 3rem;
+          text-align: center; } }
+    .creations-head button {
+      margin-left: auto;
+      padding: 1.2rem 4rem;
+      background: transparent;
+      border: 1px solid black;
+      text-transform: uppercase;
+      font-family: "Alata", sans-serif;
+      letter-spacing: 0.6rem; }
+      @media screen and (max-width: 750px) {
+        .creations-head button {
+          display: none; } }
+  .creations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+    margin: 7rem 0 4rem; }
+    @media screen and (max-width: 750px) {
+      .creations-grid {
+        grid-template-columns: repeat(1, 1fr); } }
+    .creations-grid-card {
+      height: 65vh;
+      display: flex;
+      color: #fff;
+      padding-left: 5rem; }
+      @media screen and (max-width: 750px) {
+        .creations-grid-card {
+          height: 20vh;
+          padding-left: 3rem; } }
+      .creations-grid-card h3 {
+        align-self: flex-end;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        width: 80%; }
+        @media screen and (max-width: 750px) {
+          .creations-grid-card h3 {
+            font-size: 2.5rem;
+            width: 45%; } }
+    .creations-grid-card:nth-child(1) {
+      background: url(../assets/images/desktop/image-deep-earth.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(2) {
+      background: url(../assets/images/desktop/image-night-arcade.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(3) {
+      background: url(../assets/images/desktop/image-soccer-team.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(4) {
+      background: url(../assets/images/desktop/image-grid.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(5) {
+      background: url(../assets/images/desktop/image-from-above.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(6) {
+      background: url(../assets/images/desktop/image-pocket-borealis.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(7) {
+      background: url(../assets/images/desktop/image-curiosity.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .creations-grid-card:nth-child(8) {
+      background: url(../assets/images/desktop/image-fisheye.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+
+.end {
+  padding: 1.2rem 4rem;
+  background: transparent;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 0.6rem;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 10rem; }
+  @media screen and (max-width: 750px) {
+    .end {
+      display: inline-block; } }
+
+.footer {
+  background: black; }
+  .footer-container {
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (max-width: 750px) {
+      .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  .footer-right, .footer-left {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 750px) {
+      .footer-right, .footer-left {
+        justify-content: center; } }
+  .footer-socials, .footer-nav {
+    display: flex;
+    list-style: none; }
+    @media screen and (max-width: 750px) {
+      .footer-socials, .footer-nav {
+        justify-content: center;
+        text-align: center; } }
+  .footer .copyright {
+    display: inline-block; }
+  .footer-nav,
+  .footer .copyright {
+    margin-top: 2.5rem; }
+  .footer-socials {
+    align-self: flex-end; }
+    @media screen and (max-width: 750px) {
+      .footer-socials {
+        align-self: inherit;
+        margin-top: 5rem; } }
+  .footer-socials li:not(:nth-child(4)) {
+    margin-right: 1.6rem; }
+  @media screen and (max-width: 750px) {
+    .footer-nav {
+      flex-direction: column; } }
+  .footer-nav li {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Alata", sans-serif; }
+    .footer-nav li:not(:nth-child(1)) {
+      margin-left: 3rem; }
+      @media screen and (max-width: 750px) {
+        .footer-nav li:not(:nth-child(1)) {
+          margin-top: 2rem;
+          margin-left: 0; } }
+
+.copyright {
+  font-size: 1.4rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.466);
+  font-family: "Alata", sans-serif; }
