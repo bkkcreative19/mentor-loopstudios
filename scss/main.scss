@@ -101,18 +101,24 @@ i {
   }
 
   &-image {
-    background: url(../assets/images/desktop/image-interactive.jpg) center
-      no-repeat;
+    // background: url(../assets/images/desktop/image-interactive.jpg) center
+    //   no-repeat;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 41%, 74% 41%, 74% 100%, 0 100%);
     height: 500px;
     width: 100%;
     flex: 3;
 
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
     @media screen and (max-width: 750px) {
       clip-path: none;
       height: 300px;
-      width: 300px;
+      margin-bottom: 7rem;
     }
   }
 
@@ -123,6 +129,14 @@ i {
       position: absolute;
       left: -15rem;
       bottom: 0;
+
+      @media screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: auto;
+        top: 0;
+      }
 
       & h2 {
         font-size: 5rem;
